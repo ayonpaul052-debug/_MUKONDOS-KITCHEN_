@@ -1,0 +1,102 @@
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>!DOCTYPE html&gt;
+
+
+    <title>MY WEB PAGE</title>
+    <style> 
+    body {
+        background-color: rgb(70, 69, 58);
+        background-image: url('https://img.freepik.com/free-photo/top-view-circular-food-frame_23-2148723455.jpg?semt=ais_hybrid&w=740&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 { 
+        color: rgb(253, 126, 8);
+        text-shadow: 2px 2px 4px #000; 
+    }
+
+    h2 {
+        color: rgb(255, 255, 255); 
+        background-color: rgba(0, 0, 0, 0.5); 
+        display: inline-block;
+        padding: 5px;
+    }
+
+    button { 
+        color: white;
+        background-color: rgb(179, 113, 26);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    p { 
+        /* opacity ঠিক করা হলো */
+        opacity: 1; 
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 15px;
+        max-width: 600px;
+        line-height: 1.6;
+    }
+    </style>
+
+
+    <h1> MUKONDS KITCHEN </h1>
+
+    <h2>ABOUT MENU</h2>
+    <p>
+        <em>My name is <strong>AYON PAUL</strong>. I am a student from DHAKA COLLEGE. I'm a part-time student and full-time web developer. So what's up folks? Let's do some magic through the lens of HTML and CSS.</em>
+    </p>
+    
+    <button>Click here to order</button>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
